@@ -7,7 +7,7 @@
   tasks:
     - name: push templated kickstart file
       ansible.builtin.template:
-        src: templates/student{{ student_number }}.ks.j2
+        src: playbooks/templates/student{{ student_number }}.ks.j2
         dest: "/var/www/html/student{{ student_number }}-kickstart.ks"
         owner: apache
         group: apache
